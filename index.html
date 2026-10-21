@@ -18,6 +18,14 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#FFFFFF"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
+
+    <script>
+  const v = document.querySelector('#pika');
+  v.addEventListener('ended', () => {
+    v.load();   // re-fetches from the start; works even without Range support
+    v.play();
+  });
+</script>
 </body>
 
   
